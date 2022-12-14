@@ -1,0 +1,392 @@
+// Custom.scss
+// Option A: Include all of Bootstrap
+
+// Include any default variable overrides here (though functions won't be available)
+
+@import "./bootstrap/scss/bootstrap";
+// Then add additional custom code here
+body {
+  font-family: "Montserrat", sans-serif;
+  scroll-behavior: smooth;
+}
+// Header
+#nav {
+  background-color: $pink;
+}
+.menu {
+  gap: 15px;
+  align-items: center;
+}
+.menu-item a {
+  color: black;
+  font-weight: 500;
+}
+.menu-toggle {
+  background-color: $pink;
+  border: none;
+}
+// Banner
+.banner {
+  background-color: black;
+  height: 4vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.banner h4 {
+  color: white;
+  text-transform: uppercase;
+  font-family: "Inter", sans-serif;
+}
+// Slider Section
+.sliderSection {
+  height: 100vh;
+  position: relative;
+}
+.metaslider .slides img {
+  height: 100vh !important;
+  width: auto !important;
+  object-fit: cover;
+}
+.btnDiv {
+  position: absolute;
+  left: 0;
+  bottom: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.bouton {
+  background-color: #f6a6c1;
+  border: 1px solid #f6a6c1;
+  border-radius: 10px;
+  text-align: center;
+  padding: 20px;
+  color: black !important;
+  text-decoration: none;
+  text-transform: none;
+  display: inline-block;
+}
+// Cupcakes Section
+.cupcakeSection {
+  height: 100vh;
+  background-image: url("../assets/images/BG-image_Cupcakes.png");
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.cupcakesTitle {
+  color: black;
+  text-align: center;
+
+  font-family: "Inter", sans-serif;
+}
+.cupcakes {
+  padding: auto;
+}
+.products {
+  display: flex;
+}
+.product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #808080;
+  border: 1px solid #808080;
+  border-radius: 15px;
+  width: 400px !important;
+  height: 500px !important;
+}
+.added_to_cart {
+  text-transform: none;
+  margin-top: 15px;
+}
+.woocommerce-loop-product__title {
+  text-align: center;
+  color: black;
+  text-transform: none;
+}
+.amount {
+  visibility: hidden;
+  color: black;
+}
+.price {
+  text-align: center;
+}
+.woocommerce-Price-currencySymbol {
+  color: black;
+}
+
+.button {
+  background-color: $pink !important;
+  border: 1px solid $pink !important;
+  border-radius: 15px;
+  color: black !important;
+  font-weight: 400 !important;
+  width: max-content;
+  text-align: center;
+}
+
+// Events Section
+
+.eventSection {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 100px;
+  background-image: url("../assets/images/eventSectionBG.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.eventTitle h3 {
+  font-family: "Inter", sans-serif;
+}
+.events {
+  display: flex;
+  justify-content: space-between;
+  padding: 100px;
+  gap: 24px;
+}
+.event-1 {
+  text-align: left;
+}
+.event-1 h4 {
+  text-align: center;
+  font-family: "Inter", sans-serif;
+}
+.event-2 h4 {
+  text-align: center;
+  font-family: "Inter", sans-serif;
+}
+.event-2 {
+  text-align: left;
+}
+.eventText {
+  font-size: 24px;
+}
+
+.clients h4 {
+  text-align: center;
+}
+.images {
+  background-color: #d9d9d9;
+  border: 1px solid #d9d9d9;
+  border-radius: 15px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+
+// About Section
+
+.aboutSection {
+  background-image: url("../assets/images/aboutBG.png");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.aboutTitle {
+  text-align: center;
+  padding: 50px;
+  font-family: "Inter", sans-serif;
+}
+.entryText {
+  text-align: center;
+  padding: 50px;
+}
+.entryText p {
+  font-style: italic;
+}
+.michelle {
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+// Contact Section
+.contactSection {
+  height: 100vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
+}
+.contactTitle {
+  font-family: "Inter", sans-serif;
+}
+.contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image {
+  width: 100%;
+}
+.wpcf7-form-control {
+  border: 1px solid #808080 !important;
+  border-radius: 10px !important;
+}
+
+// Footer Section
+.site-footer {
+  height: 20vh;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+.firstContainer {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+.secondContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+  gap: 25px;
+}
+.torontoName {
+  text-align: center;
+  color: white;
+}
+.icons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.links {
+  display: grid;
+  grid-template-columns: 130px 130px;
+  align-items: center;
+  justify-items: center;
+  gap: 10px;
+}
+.links a {
+  color: white;
+  text-transform: none;
+  text-decoration: none;
+}
+.thirdContainer {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+// Cart Page
+.page {
+  height: 100vh !important;
+}
+
+// Mobile Toggle Menu Button
+@media only screen and (max-width: 600px) {
+  body {
+    font-family: "Montserrat", sans-serif;
+    width: 100vw;
+  }
+
+  .toggled {
+    justify-content: center;
+    align-items: center;
+  }
+  // Banner
+  .banner h4 {
+    font-size: 16px;
+  }
+
+  // Slider Section
+  .sliderSection {
+    height: 100vh;
+  }
+
+  // Cupcakes Section
+  .cupcakeSection {
+    height: 100vh;
+  }
+  .products {
+    display: flex;
+    flex-direction: column;
+  }
+  .product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #808080;
+    border: 1px solid #808080;
+    border-radius: 15px;
+    width: 300px !important;
+    height: 400px !important;
+  }
+  .attachment-woocommerce_thumbnail {
+    width: 200px !important;
+  }
+  .post-64 {
+    visibility: hidden;
+  }
+  .post-67 {
+    visibility: hidden;
+  }
+
+  // Events Section
+
+  .eventSection {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 100px;
+    background-image: url("../assets/images/eventSectionBG.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .eventTitle h3 {
+    font-family: "Inter", sans-serif;
+  }
+  .events {
+    display: flex;
+    justify-content: space-between;
+    padding: 100px;
+    gap: 24px;
+  }
+  .event-1 {
+    text-align: left;
+  }
+  .event-1 h4 {
+    text-align: center;
+    font-family: "Inter", sans-serif;
+  }
+  .event-2 h4 {
+    text-align: center;
+    font-family: "Inter", sans-serif;
+  }
+  .event-2 {
+    text-align: left;
+  }
+  .eventText {
+    font-size: 24px;
+  }
+
+  .clients h4 {
+    text-align: center;
+  }
+  .images {
+    background-color: #d9d9d9;
+    border: 1px solid #d9d9d9;
+    border-radius: 15px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+  }
+}
