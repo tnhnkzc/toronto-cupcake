@@ -9,6 +9,11 @@ body {
   font-family: "Montserrat", sans-serif;
   scroll-behavior: smooth;
 }
+// All links in the website
+a {
+  color: black;
+  text-decoration: none;
+}
 // Header
 #nav {
   background-color: $pink;
@@ -89,9 +94,7 @@ body {
 .cupcakes {
   padding: auto;
 }
-.products {
-  display: flex;
-}
+
 .product {
   display: flex;
   flex-direction: column;
@@ -99,7 +102,6 @@ body {
   background-color: transparent;
   border: 1px solid pink;
   border-radius: 15px;
-  width: 30vw !important;
   height: auto !important;
   padding: 10px !important;
   box-shadow: $pink 5px 5px, rgb(204 153 162 / 40%) 8px 10px, rgb(204 153 16 / 30%) 15px 15px,
@@ -115,8 +117,8 @@ body {
   text-transform: none;
 }
 .amount {
-  visibility: hidden;
   color: black;
+  font-size: 16px;
 }
 .price {
   text-align: center;
@@ -321,6 +323,14 @@ body {
 .products {
   justify-content: space-between;
   gap: 10px;
+}
+.woocommerce-LoopProduct-link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.star-rating {
+  color: $pink;
 }
 
 // Mobile Toggle Menu Button

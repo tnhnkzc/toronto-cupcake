@@ -31,7 +31,7 @@ get_header();
 			<h3 class="cupcakesTitle">Best Selling Cupcakes</h3>
 		</div>
 		<div class="cupcakes">
-			<?php echo do_shortcode('[products limit="3"]'); ?>
+			<?php echo do_shortcode('[products limit="3" columns="3"]'); ?>
 		</div>
 	</section>
 	<section class="eventSection" id="events">
