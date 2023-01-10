@@ -293,11 +293,26 @@ a {
 .page {
   height: 100vh !important;
 }
+.mainBody {
+  display: flex;
+}
 #post-7 {
   background-image: url("../assets/images/cupcakelogo.png");
   background-repeat: no-repeat;
   background-position-y: bottom;
   background-position-x: right;
+}
+.filters {
+  padding: 15px;
+}
+.wc-block-price-filter__range-input-progress {
+  color: $pink;
+}
+.wc-block-components-product-rating__stars {
+  color: $pink;
+}
+.wc-block-components-price-slider--is-input-inline {
+  max-width: 80px !important;
 }
 .woocommerce-cart-form {
   border-radius: 15px;
