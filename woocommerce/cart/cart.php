@@ -176,7 +176,7 @@ do_action('woocommerce_before_cart'); ?>
 	 */
 	do_action('woocommerce_cart_collaterals');
 	?>
-	<div>
+	<div class="alsoLookedDiv">
 		<h3>Also looked at</h3>
 		<?php echo do_shortcode('[products limit="3" best_selling="true" columns="3"]'); ?>
 	</div>
