@@ -314,6 +314,15 @@ body {
   width: 50vw;
 }
 
+// Shop Page
+.shopBody {
+  padding: 10px;
+}
+.products {
+  justify-content: space-between;
+  gap: 10px;
+}
+
 // Mobile Toggle Menu Button
 @media only screen and (max-width: 600px) {
   body {

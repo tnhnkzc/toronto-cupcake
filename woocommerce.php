@@ -1,7 +1,10 @@
 <?php get_header(); ?>
 
 <main>
-  <?php woocommerce_content(); ?>
+  <div class="shopBody">
+    <?php woocommerce_content(); ?>
+
+  </div>
 
 </main>
 
