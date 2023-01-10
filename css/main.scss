@@ -38,6 +38,7 @@ body {
   color: white;
   text-transform: uppercase;
   font-family: "Inter", sans-serif;
+  margin: 0;
 }
 // Slider Section
 .sliderSection {
@@ -46,7 +47,7 @@ body {
 }
 .metaslider .slides img {
   height: 100vh !important;
-  width: 100vw !important;
+  width: 100% !important;
   object-fit: cover;
 }
 .btnDiv {
@@ -95,11 +96,14 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #808080;
-  border: 1px solid #808080;
+  background-color: transparent;
+  border: 1px solid pink;
   border-radius: 15px;
-  width: 400px !important;
-  height: 500px !important;
+  width: 30vw !important;
+  height: auto !important;
+  padding: 10px !important;
+  box-shadow: $pink 5px 5px, rgb(204 153 162 / 40%) 8px 10px, rgb(204 153 16 / 30%) 15px 15px,
+    rgb(204 153 162 / 20%) 20px 20px, rgb(204 153 162 / 10%) 25px 25px;
 }
 .added_to_cart {
   text-transform: none;
@@ -286,6 +290,12 @@ body {
 // Cart Page
 .page {
   height: 100vh !important;
+}
+#post-7 {
+  background-image: url("../assets/images/cupcakelogo.png");
+  background-repeat: no-repeat;
+  background-position-y: bottom;
+  background-position-x: right;
 }
 .woocommerce-cart-form {
   border-radius: 15px;
