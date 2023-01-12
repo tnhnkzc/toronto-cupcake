@@ -11198,6 +11198,8 @@ a {
 }
 
 .site-footer {
+  position: absolute;
+  bottom: 0;
   height: 20vh;
   background-color: black;
   display: flex;
@@ -11316,6 +11318,11 @@ a {
 
 .star-rating {
   color: #f6a6c1;
+}
+
+.site-checkout {
+  padding: 10px;
+  height: 100vh;
 }
 
 @media only screen and (max-width: 600px) {
