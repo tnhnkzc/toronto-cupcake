@@ -246,8 +246,6 @@ a {
 
 // Footer Section
 .site-footer {
-  position: absolute;
-  bottom: 0;
   height: 20vh;
   background-color: black;
   display: flex;
@@ -349,6 +347,10 @@ a {
 }
 .star-rating {
   color: $pink;
+}
+// Checkout Page
+.checkout_coupon {
+  width: 50%;
 }
 
 // Mobile Toggle Menu Button
