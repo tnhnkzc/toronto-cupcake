@@ -11320,11 +11320,6 @@ a {
   color: #f6a6c1;
 }
 
-.site-checkout {
-  padding: 10px;
-  height: 100vh;
-}
-
 @media only screen and (max-width: 600px) {
   body {
     font-family: "Montserrat", sans-serif;
