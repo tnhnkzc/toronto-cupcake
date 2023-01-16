@@ -334,7 +334,7 @@ a {
 
 // Shop Page
 .shopBody {
-  padding: 10px;
+  padding: 65px;
 }
 .products {
   justify-content: space-between;
@@ -379,6 +379,16 @@ a {
   border-radius: 10px;
   width: 50vw;
 }
+
+// Individual Product Page
+.woocommerce-product-gallery {
+  width: 350px !important;
+}
+.shopBody {
+  margin-bottom: 50px;
+  width: 100vw;
+}
+
 // Mobile Toggle Menu Button
 @media only screen and (max-width: 600px) {
   body {

@@ -1,6 +1,6 @@
 <?php get_header(); ?>
 
-<main>
+<main class="content">
   <div class="mainBody">
     <aside class="filters">
       <?php dynamic_sidebar('Sidebar'); ?>
