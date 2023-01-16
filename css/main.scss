@@ -349,10 +349,36 @@ a {
   color: $pink;
 }
 // Checkout Page
-.checkout_coupon {
-  width: 50%;
+.checkout-main {
+  padding: 10px;
+  height: 100vh;
 }
-
+.checkout_coupon {
+  width: 50vw;
+}
+.woocommerce-checkout-review-order {
+  display: flex;
+  padding: 5px;
+  gap: 10px;
+}
+.woocommerce-checkout-payment {
+  width: 40vw;
+}
+.col-1 {
+  width: 50vw;
+}
+.col-2 {
+  width: 50vw;
+}
+.woocommerce-notices-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.woocommerce-error {
+  border: 2px solid $pink;
+  border-radius: 10px;
+  width: 50vw;
+}
 // Mobile Toggle Menu Button
 @media only screen and (max-width: 600px) {
   body {
