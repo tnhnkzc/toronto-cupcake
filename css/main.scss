@@ -100,12 +100,11 @@ a {
   flex-direction: column;
   align-items: center;
   background-color: transparent;
-  border: 1px solid pink;
+  border: 1px solid black;
   border-radius: 15px;
   height: auto !important;
   padding: 10px !important;
-  box-shadow: $pink 5px 5px, rgb(204 153 162 / 40%) 8px 10px, rgb(204 153 16 / 30%) 15px 15px,
-    rgb(204 153 162 / 20%) 20px 20px, rgb(204 153 162 / 10%) 25px 25px;
+  box-shadow: black 5px 5px, rgb(0 0 0 / 40%) 8px 10px;
 }
 .added_to_cart {
   text-transform: none;
@@ -349,6 +348,20 @@ a {
   color: $pink;
 }
 // Checkout Page
+.messageCheckout {
+  width: 50vw;
+  right: 0;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  top: 28vh;
+}
+.messageCheckout p {
+  font-family: "Dancing Script", cursive;
+  font-size: 36px;
+  color: $pink;
+}
 .checkout-main {
   padding: 10px;
   height: 100vh;
@@ -423,7 +436,7 @@ a {
     flex-direction: column;
     align-items: center;
     background-color: #808080;
-    border: 1px solid #808080;
+    border: 1px solid black;
     border-radius: 15px;
     width: 300px !important;
     height: 400px !important;

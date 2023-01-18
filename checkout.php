@@ -16,7 +16,13 @@ get_header();
   <?php
   while (have_posts()) :
     the_post();
-
+  ?>
+    <div class="messageCheckout">
+      <p>
+        Thank you for choosing Toronto Cupcake !
+      </p>
+    </div>
+  <?php
     get_template_part('template-parts/content', 'page');
 
     // If comments are open or we have at least one comment, load up the comment template.
@@ -26,6 +32,8 @@ get_header();
 
   endwhile; // End of the loop.
   ?>
+
+
 
 
 
