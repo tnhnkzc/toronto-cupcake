@@ -402,6 +402,27 @@ a {
   width: 100vw;
 }
 
+// Account Page
+.woocommerce {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.woocommerce-MyAccount-navigation {
+  width: 100vw !important;
+}
+.woocommerce-MyAccount-navigation ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.woocommerce-MyAccount-navigation ul li {
+  text-decoration: none;
+  list-style: none;
+}
+
 // Mobile Toggle Menu Button
 @media only screen and (max-width: 600px) {
   body {
