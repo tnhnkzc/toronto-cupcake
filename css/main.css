@@ -11034,12 +11034,11 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: transparent;
+  background-color: rgba(0, 0, 0, 0.3);
   border: 1px solid black;
   border-radius: 15px;
   height: auto !important;
   padding: 10px !important;
-  box-shadow: black 5px 5px, rgba(0, 0, 0, 0.4) 8px 10px;
 }
 
 .added_to_cart {
