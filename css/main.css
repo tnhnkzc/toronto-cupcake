@@ -11034,7 +11034,6 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.3);
   border: 1px solid black;
   border-radius: 15px;
   height: auto !important;
@@ -11298,8 +11297,9 @@ a {
   border-color: #f6a6c1 !important;
 }
 
-.shopBody {
+.mainBody {
   padding: 65px;
+  width: 100vw;
 }
 
 .products {
@@ -11377,6 +11377,9 @@ a {
 
 .shopBody {
   margin-bottom: 50px;
+}
+
+.product-div {
   width: 100vw;
 }
 
@@ -11429,7 +11432,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #808080;
+    background-color: transparent;
     border: 1px solid black;
     border-radius: 15px;
     width: 300px !important;
