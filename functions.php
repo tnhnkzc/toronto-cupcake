@@ -203,3 +203,7 @@ if (defined('JETPACK__VERSION')) {
  * Theme support 
  */
 add_theme_support('woocommerce');
+
+
+// Plugin ACF
+require_once get_template_directory() . '/inc/acf.php';

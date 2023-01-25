@@ -5,6 +5,13 @@
  * @package Toronto_Cupcake
  */
 
+$img = get_field('info_about_image', 'infos');
+$aboutText = get_field('info_about', 'infos');
+$aboutEntry = get_field('info_about_entry', 'infos');
+$events = get_field('info_events', 'infos');
+$occasions = get_field('info_occasions', 'infos');
+$occasionsTitle = get_field('info_occasions_title', 'infos');
+$eventsTitle = get_field('info_events_title', 'infos');
 get_header();
 
 
@@ -47,42 +54,40 @@ $informations = new WP_Query($args);
     </div>
     <div class="events">
       <div class="event-1">
-        <h4>Corporate and Marketing Events</h4>
+        <h4><?= $eventsTitle; ?></h4>
         <p class="eventText">
-          From Product/Brand Launch to Customer Appreciation, Toronto Cupcake is able to provide you custom decorating to match that winning campaign. Our graphics are crystal clear and are edible!
+          <?= $events; ?>
         </p>
       </div>
       <div class="event-2">
-        <h4>Occasions</h4>
+        <h4><?= $occasionsTitle; ?></h4>
         <p class="eventText">
-          A celebration of life, love, and all of life's memorable events. We have over 1500 different combinations with our standard offerings but if you want something special that is also possible !
+          <?= $occasions; ?>
         </p>
       </div>
     </div>
     <div class="clients">
       <h4>Some of Our Clients</h4>
       <div class="images">
-        <img src="<?= bloginfo('template_directory'); ?>/assets/images/versace.png" alt="">
-        <img src="<?= bloginfo('template_directory'); ?>/assets/images/android.png" alt="">
-        <img src="<?= bloginfo('template_directory'); ?>/assets/images/bmw.png" alt="">
-        <img src="<?= bloginfo('template_directory'); ?>/assets/images/ibm.png" alt="">
-        <img src="<?= bloginfo('template_directory'); ?>/assets/images/linkedin.png" alt="">
+        <?php if (have_rows('info_company_img', 'infos')) : ?>
+          <?php while (have_rows('info_company_img', 'infos')) : the_row();
+            $companyLogo = get_sub_field('logo');
+          ?>
+            <img src="<?= $companyLogo['url']; ?>" alt="">
+          <?php endwhile; ?>
+        <?php endif; ?>
       </div>
   </section>
   <section class="aboutSection" id="about">
     <div class="aboutTitle">
       <h3>
-        <?php the_title() ?>
+        <?= $aboutEntry ?>
       </h3>
     </div>
-    <div class="entryText">
-      <h5>We are driven by loving what we do and what we make everyday. We get to use the finest ingredients to make what we believe are the tastiest treats around. </h5>
-      <p>We are driven by loving what we do and what we make everyday. We get to use the finest ingredients to make what we believe are the tastiest treats around. </p>
-    </div>
     <div class="michelle">
-      <img src="<?= bloginfo('template_directory'); ?>/assets/images/MichellePhoto.png" alt="">
-      <h5>About Michelle
-        Toronto Cupcake was created by Michelle Harrison so she could pursue her love of baking. A lifelong baker, inspired by her mother, Michelle opened Toronto Cupcake in August 2010 as one of Canada's first gourmet cupcakeries.</p>
+      <img src="<?= $img['url']; ?>" alt="photo de michel">
+      <h5>
+        <p><?= $aboutText ?></p>
     </div>
   </section>
   <section class="contactSection" id="contact">
