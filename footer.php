@@ -10,26 +10,34 @@
  * @package Toronto_Cupcake
  */
 
+
+$left_cont_title = get_field('left_container_title', 'infos');
+$left_cont_content = get_field('left_container_content', 'infos');
+$right_cont_title = get_field('right_container_title', 'infos');
+$right_cont_content = get_field('right_container_content', 'infos');
+
+
+
+
 ?>
 
 <footer id="colophon" class="site-footer">
 	<div class="firstContainer">
-		<h4>Working Hours</h4>
+		<h4><?= $left_cont_title ?></h4>
 		<p>
-			Monday -> Saturday : <br>
-			7.00 am -> 10.00 pm
-		</p>
-		<p>
-			Sunday : <br>
-			7.00 am -> 10.00 pm
-			(No pick ups)
+			<?= $left_cont_content ?>
 		</p>
 	</div>
 	<div class="secondContainer">
 		<div class="icons">
-			<a href="#"><img src="<?= bloginfo('template_directory'); ?>/assets/icons/facebook 1.png" alt=""></a>
-			<a href="#"><img src="<?= bloginfo('template_directory'); ?>/assets/icons/instagram 1.png" alt=""></a>
-			<a href="#"><img src="<?= bloginfo('template_directory'); ?>/assets/icons/twitter 1.png" alt=""></a>
+			<?php if (have_rows('social_media', 'infos')) :
+				while (have_rows('social_media', 'infos')) : the_row();
+					$icon_social = get_sub_field('icon');
+					$url_social = get_sub_field('url');
+			?>
+					<a href="<?= $url_social; ?>"><img src="<?= $icon_social; ?>/assets/icons/facebook 1.png" alt=""></a>
+				<?php endwhile; ?>
+			<?php endif; ?>
 		</div>
 		<div class="links">
 			<a href="">Privacy Policy</a>
@@ -40,15 +48,9 @@
 		<p class="torontoName">&copy; Toronto Cupcake</p>
 	</div>
 	<div class="thirdContainer">
-		<h4>Contact Us</h4>
+		<h4><?= $right_cont_title; ?></h4>
 		<p>
-			North America :
-			+1-877-334-9468
-		</p>
-		<p>Toronto and GTA :
-			647-478-9464</p>
-		<p>Outside of North AM :
-			+001-647-478-9464</p>
+			<?= $right_cont_content; ?></p>
 	</div>
 </footer><!-- #colophon -->
 
