@@ -17,11 +17,7 @@ get_header();
   while (have_posts()) :
     the_post();
   ?>
-    <div class="messageCheckout">
-      <p>
-        Thank you for choosing Toronto Cupcake !
-      </p>
-    </div>
+
   <?php
     get_template_part('template-parts/content', 'page');
 

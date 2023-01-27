@@ -11202,6 +11202,7 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 30px;
+  margin-top: 50px;
 }
 
 .firstContainer {
@@ -11394,6 +11395,7 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  gap: 25px;
 }
 
 .woocommerce-MyAccount-navigation {
@@ -11410,6 +11412,14 @@ a {
 .woocommerce-MyAccount-navigation ul li {
   text-decoration: none;
   list-style: none;
+}
+
+.woocommerce-MyAccount-content a {
+  color: #f6a6c1;
+}
+
+.woocommerce-MyAccount-content a:hover {
+  color: #0d6efd;
 }
 
 @media only screen and (max-width: 600px) {

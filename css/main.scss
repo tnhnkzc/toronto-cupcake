@@ -249,6 +249,7 @@ a {
   justify-content: space-between;
   align-items: center;
   padding: 30px;
+  margin-top: 50px;
 }
 .firstContainer {
   color: white;
@@ -416,6 +417,7 @@ a {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  gap: 25px;
 }
 .woocommerce-MyAccount-navigation {
   width: 100vw !important;
@@ -430,7 +432,12 @@ a {
   text-decoration: none;
   list-style: none;
 }
-
+.woocommerce-MyAccount-content a {
+  color: $pink;
+}
+.woocommerce-MyAccount-content a:hover {
+  color: $primary;
+}
 // Mobile Toggle Menu Button
 @media only screen and (max-width: 600px) {
   body {
