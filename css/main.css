@@ -11535,23 +11535,28 @@ a {
 .site-footer .firstContainer {
   grid-column: 1/span 3;
   grid-row: 1/span 3;
+  width: 36vw;
 }
 .site-footer .firstContainer h4, .site-footer .firstContainer .h4 {
   font-size: 16px;
+  text-align: center;
 }
 .site-footer .firstContainer p {
   font-size: 14px;
 }
 .site-footer .secondContainer {
-  grid-column: 2/3;
+  grid-column: 1/span 7;
   grid-row: 4/span 7;
-  width: 20vw;
+  width: auto;
 }
 .site-footer .secondContainer .icons {
   justify-content: center;
   gap: 10px;
 }
 .site-footer .secondContainer .links {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   gap: 10px;
 }
 .site-footer .secondContainer .links a {
@@ -11561,10 +11566,11 @@ a {
 .site-footer .thirdContainer {
   grid-column: 3/span 4;
   grid-row: 1/span 3;
-  width: 25vw;
+  width: auto;
 }
 .site-footer .thirdContainer h4, .site-footer .thirdContainer .h4 {
   font-size: 16px;
+  text-align: center;
 }
 .site-footer .thirdContainer p {
   font-size: 14px;
