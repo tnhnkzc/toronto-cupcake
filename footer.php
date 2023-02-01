@@ -35,7 +35,7 @@ $right_cont_content = get_field('right_container_content', 'infos');
 					$icon_social = get_sub_field('icon');
 					$url_social = get_sub_field('url');
 			?>
-					<a href="<?= $url_social; ?>"><img src="<?= $icon_social; ?>/assets/icons/facebook 1.png" alt=""></a>
+					<a href="<?= $url_social; ?>"><img src="<?= $icon_social['url']; ?>" alt=""></a>
 				<?php endwhile; ?>
 			<?php endif; ?>
 		</div>

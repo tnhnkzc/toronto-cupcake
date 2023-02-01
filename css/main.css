@@ -11425,7 +11425,6 @@ a {
 @media only screen and (max-width: 600px) {
   body {
     font-family: "Montserrat", sans-serif;
-    width: 100vw;
   }
   .toggled {
     justify-content: center;
@@ -11433,12 +11432,6 @@ a {
   }
   .banner h4, .banner .h4 {
     font-size: 16px;
-  }
-  .sliderSection {
-    height: 100vh;
-  }
-  .cupcakeSection {
-    height: 100vh;
   }
   .products {
     display: flex;
@@ -11451,8 +11444,8 @@ a {
     background-color: transparent;
     border: 1px solid black;
     border-radius: 15px;
-    width: 300px !important;
-    height: 400px !important;
+    width: 100px !important;
+    height: 200px !important;
   }
   .attachment-woocommerce_thumbnail {
     width: 200px !important;
@@ -11464,24 +11457,25 @@ a {
     visibility: hidden;
   }
   .eventSection {
-    height: 100vh;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     flex-direction: column;
-    gap: 100px;
     background-image: url("../assets/images/eventSectionBG.png");
     background-repeat: no-repeat;
     background-size: cover;
+    gap: 0;
   }
   .eventTitle h3, .eventTitle .h3 {
     font-family: "Inter", sans-serif;
+    margin-top: 10px;
   }
   .events {
     display: flex;
-    justify-content: space-between;
-    padding: 100px;
-    gap: 24px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
   }
   .event-1 {
     text-align: left;
@@ -11498,7 +11492,7 @@ a {
     text-align: left;
   }
   .eventText {
-    font-size: 24px;
+    font-size: 16px;
   }
   .clients h4, .clients .h4 {
     text-align: center;
@@ -11507,9 +11501,71 @@ a {
     background-color: #d9d9d9;
     border: 1px solid #d9d9d9;
     border-radius: 15px;
-    padding: 15px;
-    display: flex;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 100px 100px;
+    grid-template-rows: 100px 100px;
     align-items: center;
-    gap: 50px;
+    margin-bottom: 10px;
   }
+  .images img {
+    width: 150px;
+  }
+}
+.aboutTitle h3, .aboutTitle .h3 {
+  font-size: 24px;
+}
+
+.michelle {
+  display: flex;
+  flex-direction: column;
+}
+.michelle h5, .michelle .h5 {
+  font-size: 16px;
+}
+
+.site-footer {
+  margin-top: 0;
+  height: auto;
+  padding: 10px;
+  display: grid;
+  grid-template-columns: 100px 100px 100px;
+  grid-template-rows: 100px 100px;
+}
+.site-footer .firstContainer {
+  grid-column: 1/span 3;
+  grid-row: 1/span 3;
+}
+.site-footer .firstContainer h4, .site-footer .firstContainer .h4 {
+  font-size: 16px;
+}
+.site-footer .firstContainer p {
+  font-size: 14px;
+}
+.site-footer .secondContainer {
+  grid-column: 2/3;
+  grid-row: 4/span 7;
+  width: 20vw;
+}
+.site-footer .secondContainer .icons {
+  justify-content: center;
+  gap: 10px;
+}
+.site-footer .secondContainer .links {
+  gap: 10px;
+}
+.site-footer .secondContainer .links a {
+  text-align: center;
+  font-size: 14px;
+}
+.site-footer .thirdContainer {
+  grid-column: 3/span 4;
+  grid-row: 1/span 3;
+  width: 25vw;
+}
+.site-footer .thirdContainer h4, .site-footer .thirdContainer .h4 {
+  font-size: 16px;
+}
+.site-footer .thirdContainer p {
+  font-size: 14px;
 }/*# sourceMappingURL=main.css.map */

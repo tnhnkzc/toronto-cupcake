@@ -42,15 +42,7 @@ $informations = new WP_Query($args);
   </section>
   <section class="eventSection" id="events">
     <div class="eventTitle">
-      <?php if ($informations->have_posts()) :
-        while ($informations->have_posts()) :
-          $data->the_post();
-      ?>
-          <h3><?php echo get_the_title(32) ?></h3>
-      <?php
-        endwhile;
-      endif;
-      wp_reset_postdata();  ?>
+      <h3>Events and Organizations</h3>
     </div>
     <div class="events">
       <div class="event-1">
