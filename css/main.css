@@ -11475,4 +11475,28 @@ a {
   .woocommerce .alsoLookedDiv {
     display: none;
   }
+  .woocommerce-MyAccount-navigation ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    margin: 0;
+  }
+  .woocommerce-MyAccount-navigation ul a {
+    text-decoration: none;
+    text-transform: none;
+    color: #f6a6c1;
+  }
+  .woocommerce-MyAccount-content {
+    padding: 15px;
+  }
+  .woocommerce .checkout_coupon {
+    width: 100vw;
+  }
+  .woocommerce .woocommerce-checkout-review-order {
+    display: flex;
+    flex-direction: column;
+  }
+  .woocommerce .woocommerce-checkout-payment {
+    width: 100%;
+  }
 }/*# sourceMappingURL=main.css.map */

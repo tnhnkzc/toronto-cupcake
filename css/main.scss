@@ -627,6 +627,7 @@ a {
   }
 
   // Cart Page
+
   .woocommerce {
     .cart-collaterals {
       display: flex;
@@ -634,6 +635,38 @@ a {
     }
     .alsoLookedDiv {
       display: none;
+    }
+  }
+
+  // Account Page
+  .woocommerce-MyAccount-navigation {
+    ul {
+      display: flex;
+      flex-direction: column;
+      padding: 0;
+      margin: 0;
+      a {
+        text-decoration: none;
+        text-transform: none;
+        color: $pink;
+      }
+    }
+  }
+  .woocommerce-MyAccount-content {
+    padding: 15px;
+  }
+
+  // Checkout Page
+  .woocommerce {
+    .checkout_coupon {
+      width: 100vw;
+    }
+    .woocommerce-checkout-review-order {
+      display: flex;
+      flex-direction: column;
+    }
+    .woocommerce-checkout-payment {
+      width: 100%;
     }
   }
 }
