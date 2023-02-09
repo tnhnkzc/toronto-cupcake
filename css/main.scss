@@ -610,4 +610,30 @@ a {
       }
     }
   }
+
+  // Shop Page
+  .mainBody {
+    display: flex;
+    flex-direction: column;
+    .products {
+      display: grid;
+      grid-template-columns: 100px 100px;
+      justify-items: center;
+      align-items: center;
+    }
+    .shopBody {
+      margin: 0;
+    }
+  }
+
+  // Cart Page
+  .woocommerce {
+    .cart-collaterals {
+      display: flex;
+      flex-direction: column !important;
+    }
+    .alsoLookedDiv {
+      display: none;
+    }
+  }
 }
