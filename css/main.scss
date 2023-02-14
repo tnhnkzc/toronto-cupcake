@@ -18,6 +18,36 @@ a {
 #nav {
   background-color: $pink;
 }
+// 404 error Page
+#primary {
+}
+// Login Page
+.main-container-login {
+  height: 100vh;
+  padding: 15px;
+  .um-button {
+    background-color: $pink !important;
+  }
+  .um-alt {
+    background-color: #eeeeee !important;
+  }
+}
+// Register Page
+.main-container-register {
+  height: 100vh;
+  padding: 15px;
+  .um-button {
+    background-color: $pink !important;
+  }
+  .um-alt {
+    background-color: #eeeeee !important;
+  }
+}
+// Profile Page UM
+.um-profile-body {
+  height: 40vh;
+  overflow: scroll;
+}
 .menu {
   gap: 15px;
   align-items: center;

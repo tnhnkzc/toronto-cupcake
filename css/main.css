@@ -10833,6 +10833,33 @@ a {
   background-color: #f6a6c1;
 }
 
+.main-container-login {
+  height: 100vh;
+  padding: 15px;
+}
+.main-container-login .um-button {
+  background-color: #f6a6c1 !important;
+}
+.main-container-login .um-alt {
+  background-color: #eeeeee !important;
+}
+
+.main-container-register {
+  height: 100vh;
+  padding: 15px;
+}
+.main-container-register .um-button {
+  background-color: #f6a6c1 !important;
+}
+.main-container-register .um-alt {
+  background-color: #eeeeee !important;
+}
+
+.um-profile-body {
+  height: 40vh;
+  overflow: scroll;
+}
+
 .menu {
   gap: 15px;
   align-items: center;
