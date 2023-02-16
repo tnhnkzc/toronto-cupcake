@@ -11299,6 +11299,10 @@ a {
   width: 100vw;
 }
 
+.single-product .product {
+  padding: 70px !important;
+}
+
 .woocommerce {
   display: flex;
   justify-content: center;

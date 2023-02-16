@@ -443,6 +443,12 @@ a {
   width: 100vw;
 }
 
+// Single Product
+.single-product {
+  .product {
+    padding: 70px !important;
+  }
+}
 // Account Page
 .woocommerce {
   display: flex;
