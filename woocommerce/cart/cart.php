@@ -166,20 +166,14 @@ do_action('woocommerce_before_cart'); ?>
 
 <?php do_action('woocommerce_before_cart_collaterals'); ?>
 
-<div class="cart-collaterals p-3 d-flex flex-column">
-	<?php
-	/**
-	 * Cart collaterals hook.
-	 *
-	 * @hooked woocommerce_cross_sell_display
-	 * @hooked woocommerce_cart_totals - 10
-	 */
-	do_action('woocommerce_cart_collaterals');
-	?>
-	<div class="alsoLookedDiv">
-		<h3>Also looked at</h3>
-		<?php echo do_shortcode('[products limit="3" best_selling="true" columns="3"]'); ?>
-	</div>
-</div>
+<?php
+/**
+ * Cart collaterals hook.
+ *
+ * @hooked woocommerce_cross_sell_display
+ * @hooked woocommerce_cart_totals - 10
+ */
+do_action('woocommerce_cart_collaterals');
+?>
 
 <?php do_action('woocommerce_after_cart'); ?>

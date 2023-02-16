@@ -10950,7 +10950,7 @@ a {
   border: 1px solid black;
   border-radius: 15px;
   height: auto !important;
-  padding: 10px !important;
+  padding: 50px !important;
 }
 
 .added_to_cart {
@@ -11157,6 +11157,11 @@ a {
   height: 100vh !important;
 }
 
+.entry-title {
+  margin-top: 50px;
+  text-align: center;
+}
+
 .mainBody {
   display: flex;
 }
@@ -11194,14 +11199,17 @@ a {
 .shop_table {
   border: 2px solid #f6a6c1 !important;
   border-radius: 15px;
-}
-
-.alsoLookedDiv {
-  width: 50vw;
+  width: 100% !important;
 }
 
 .cart-item {
   border-color: #f6a6c1 !important;
+}
+
+.cart_totals {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .mainBody {
@@ -11491,6 +11499,9 @@ a {
     grid-template-columns: 100px 100px;
     justify-items: center;
     align-items: center;
+  }
+  .mainBody .product {
+    padding: 15px !important;
   }
   .mainBody .shopBody {
     margin: 0;

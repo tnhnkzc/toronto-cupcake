@@ -72,9 +72,10 @@ $informations = new WP_Query($args);
   </section>
   <section class="aboutSection" id="about">
     <div class="aboutTitle">
-      <h3>
+      <h3>About Us</h3>
+      <h4>
         <?= $aboutEntry ?>
-      </h3>
+      </h4>
     </div>
     <div class="michelle">
       <img src="<?= $img['url']; ?>" alt="photo de michel">
